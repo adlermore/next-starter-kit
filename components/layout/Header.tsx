@@ -32,7 +32,6 @@ function Header() {
     }
   }, [isOpen, pathname]);
 
-
   useEffect(() => {
     setOpen(false);
   }, [pathname]);

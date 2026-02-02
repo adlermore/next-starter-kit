@@ -12,16 +12,8 @@
         └── 📁home
             ├── Services.tsx
         └── 📁Icons
-            ├── IconArrowDown.tsx
-            ├── IconChecked.tsx
-            ├── IconEmail.tsx
-            ├── IconFb.tsx
-            ├── IconInsta.tsx
-            ├── IconLocation.tsx
-            ├── IconPhone.tsx
-            ├── IconService4.tsx
-            ├── IconTelegram.tsx
-            ├── IconUser.tsx
+            ├── ICON1.tsx
+            ├── ICON2.tsx
         └── 📁layout
             ├── Footer.tsx
             ├── Header.tsx

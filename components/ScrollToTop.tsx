@@ -1,7 +1,7 @@
 'use client'
 
 // import IconToTop from "@/public/icons/IconToTop";
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 function ScrollProgress() {
   const containerRef = useRef(null);

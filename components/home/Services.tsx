@@ -28,7 +28,7 @@ function Services() {
 
   // Skeleton loader component
   const SkeletonCard = () => (
-    <div className="w-full relative h-[400px] overflow-hidden rounded animate-pulse bg-gray-200 flex flex-col justify-end">
+    <div className="w-full relative h-100 overflow-hidden rounded animate-pulse bg-gray-200 flex flex-col justify-end">
       <div className="absolute inset-0 bg-gray-300" />
       <div className="absolute bottom-0 left-0 right-0 p-6">
         <div className="h-8 w-2/3 bg-gray-400 rounded" />
@@ -37,14 +37,14 @@ function Services() {
   )
 
   return (
-    <div className='grid xl:grid-cols-4 md:grid-cols-3  grid-cols-2 sm:gap-[25px] gap-3'>
+    <div className='grid xl:grid-cols-4 md:grid-cols-3  grid-cols-2 sm:gap-6.25 gap-3'>
       {loading
         ? Array.from({ length: 8 }).map((_, i) => <SkeletonCard key={i} />)
         : categories.map((category) => (
           <Link
             key={category.id}
             href={`/services?service=service_${category.id}`}
-            className="group w-full relative sm:h-[400px] h-[200px] overflow-hidden"
+            className="group w-full relative sm:h-100 h-50 overflow-hidden"
           >
             <div className="w-full h-full relative">
               <Image
