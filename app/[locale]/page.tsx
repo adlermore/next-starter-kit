@@ -9,7 +9,6 @@ export default function Home() {
     <div className="overflow-x-hidden">
       <div className="custom_container">
         <Services />
-
         <h1>{t('title')}</h1>
         <p>{t('description')}</p>
       </div>

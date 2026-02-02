@@ -20,9 +20,7 @@ const montserrat = Montserrat({
 
 export const metadata: Metadata = {
   title: "----",
-  icons: {
-    icon: "/favicon.ico",
-  },
+  icons: {icon: "/favicon.ico"},
   description:"----",
   keywords: [
     "-",
@@ -33,11 +31,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "----",
     description:"--",
-    url: "https://yourdomain.com",
+    url: "----",
     siteName: "--",
     images: [
       {
-        url: "https://yourdomain.com/og-image.jpg",
+        url: "----/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "-- Service",
@@ -70,7 +68,7 @@ export default async function LocaleLayout({
           <NextIntlClientProvider>
             <Toaster containerStyle={{ zIndex: 9999 }} position="bottom-right" />
             <Header />
-            <div className="flex-1 main-wrapper pt-[170px]">{children}</div>
+            <div className="flex-1 main-wrapper pt-42.5">{children}</div>
             <Footer />
           </NextIntlClientProvider>
         </body>

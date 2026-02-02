@@ -56,7 +56,9 @@ export default function ContactForm() {
     try {
       const res = await api.post('/contact', payload);
       setOpen(true);
-      toast.success(res.data.message);
+      console.log('res__' , res);
+
+      toast.success('success');
       reset();
     } catch (error: any) {
       toast.error(error?.response?.data?.message);
@@ -112,7 +114,7 @@ export default function ContactForm() {
           <button
             type="submit"
             disabled={isSubmitting}
-            className={`w-full md:w-full px-8 py-2 rounded-lg flex items-center justify-center h-[45px] bg-siteColor text-white font-semibold cursor-pointer hover:opacity-70 transition ${isSubmitting ? "opacity-70 cursor-not-allowed" : ""}`}
+            className={`w-full md:w-full px-8 py-2 rounded-lg flex items-center justify-center h-11.25 bg-siteColor text-white font-semibold cursor-pointer hover:opacity-70 transition ${isSubmitting ? "opacity-70 cursor-not-allowed" : ""}`}
           >
             {isSubmitting ? <SpinerLoader /> : "Submit"}
           </button>
