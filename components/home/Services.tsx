@@ -5,9 +5,10 @@ import React, { useEffect } from 'react'
 import Image from 'next/image'
 import api from '@/utils/api'
 import { APIURLIMG } from '@/utils/constants'
+import ContactForm from './ContactForm'
 
 function Services() {
-  return <>Services</>
+  return <><ContactForm /></>
   const [categories, setCategories] = React.useState<Array<{ id: number; name: string; image_path: string , description: string }>>([])
   const [loading, setLoading] = React.useState<boolean>(true)
 
